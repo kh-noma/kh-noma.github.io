@@ -1,0 +1,112 @@
+.hide-mobile{
+    display:none
+}
+body{
+    background: rgb(255, 255, 255);
+    font-family: "Josefin Sans", serif;
+}
+
+.wrap {
+    margin: 2em;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    background: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 999;
+    top:0;
+    right:0;
+    height: 100vh;
+    margin: 0;
+    list-style: none;
+    width: 25%;
+    text-align: left;
+    padding: 2em;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+
+    li {
+        margin: 2em 0;  
+        &:nth-of-type(1){
+            margin-bottom: 2em;
+        }
+
+        a{
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: underline; 
+            }
+        }    
+    }
+}
+
+.open{
+    transform: translateX(0%);
+}
+
+h1 {
+    font-size: 7rem; 
+    color: rgb(0, 0, 0); 
+    position: absolute; 
+    text-align: center; 
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    background-image: url("2.png"); 
+    background-size: cover;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    height: 150vh; 
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;}
+
+h2 {
+    font-size: 6rem; 
+    color: rgb(0, 0, 0); 
+    top: 50%; 
+    z-index: 1;
+    text-align: center; 
+    margin: 0; 
+}
+
+.image-container {
+    position: relative;
+    width: 90%; /* Set desired width */
+    height: 400px; /* Set desired height */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 90%; /* Adjust width to exceed container */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%);
+    height: auto; /* Maintain aspect ratio */
+    margin-top: -50px; /* Adjust margin to crop from top */
+}
+
+.vcontent {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center;
+    text-align: center;
+}

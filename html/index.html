@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage Layout</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+    <div class="wrap">
+        <header>
+            <div class="header-left">
+                <a href="index.html"></a>
+                <a href="#" class="home hide-mobile">Home</a>
+            </div>
+
+            <nav>
+                <a href = "#" class="menu-open hide-desktop">
+                    <img src="images/menu.svg" alt="Open menu">
+                </a>
+                <ul class="primary-nav">
+                    <a href="#" class="menu-close">
+                        <img src="images/close.svg" alt="Close menu">
+                    </a>
+
+                    <li class="first-li">
+
+                        <li><a href="add.html">Mew</a></li>
+                        <li><a href="#">Lily</a></li>
+                        <li><a href="#">Luna</a></li>
+                        <li><a href="#">Minnie</a></li>
+                        <li><a href="#">Benjamin</a></li>
+                        <li><a href="#">Larry</a></li>
+                        <li><a href="#">Orange</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </header>   
+    </body>
+
+        <main>
+            <link rel="stylesheet" href="styles.css">
+            <h1>EVER WONDERED WHAT CATS THINK ABOUT?</h1>
+        </main>
+
+        
+    </div>
+
+    <script>
+        const menu = document.querySelector('nav ul');
+        const menuBtn = document.querySelector('.menu-open');
+        const closeBtn = document.querySelector('.menu-close');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.add('open')
+        })
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('open')
+        })
+    </script>   
+
+    <section class="block" id="block-2">
+        <h2>LETS INTRODUCE NYUAD CATS</h2>
+        <div class="image-container">
+            <img src="images/1.png" usemap="#sitemap">
+            <map name="sitemap">
+                <area shape="rect" coords="0,0,1080,200" href="add.html" alt="Cats" target="_blank">
+            </map>
+        </div>
+    </section>
+
+    <section class="block" id="block-3">
+        <h3>FILM "WHAT CATS THINK ABOUT"</h3>
+        <h4>Produced by Nigina Rashidova and Nomundari Khenzee</h4>
+
+        <div class="vcontent">
+            <iframe width="1300" height="540" 
+                src="https://www.youtube.com/embed/klgoBHjgGCI" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                elit. Tempore, totam harum cupiditate quaerat doloribus 
+                corrupti cum veniam? Neque, aliquam in minima quis, 
+                quo rerum ratione iste assumenda, nisi optio soluta.
+            </p>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 My Webpage. All Rights Reserved.</p>
+    </footer>
+</html>
