@@ -12,22 +12,24 @@
 
 <body> 
     <div class="wrap">
+         <!-- Header section containing menu -->
         <header>
             <div class="header-left">
                 <a href="index.html"></a>
+
                 <a href="#" class="home hide-mobile">Home</a>
             </div>
-
+            <!-- Navigation menu -->
             <nav>
                 <a href = "#" class="menu-open hide-desktop">
                     <img src="images/menu.svg" alt="Open menu">
                 </a>
+                <!-- Primary navigation list -->
                 <ul class="primary-nav">
+                    <!-- Menu close button -->
                     <a href="#" class="menu-close">
                         <img src="images/close.svg" alt="Close menu">
                     </a>
-
-                    <li class="first-li">
                         <li><a href="add.html#Mew-cat">MEW</a></li>
                         <li><a href="add.html#Luna">LUNA</a></li>
                         <li><a href="add.html#Minnie">MINNIE</a></li>
@@ -38,11 +40,10 @@
                 </ul>
             </nav>
         </header>   
-    </body>
-
+        <!-- Main content section -->
         <main>
-            <link rel="stylesheet" href="styles.css">
             <h1>
+                <!-- Main heading with different colored spans -->
                 <span style="color: rgb(255, 255, 255);">EVER WONDERED</span> 
                 <span style="color: rgb(13, 12, 31);">WHAT CATS THINK ABOUT?</span>
             </h1>
@@ -50,11 +51,12 @@
 
         
     </div>
-
+    <!-- Menu JavaScript -->
     <script>
         const menu = document.querySelector('nav ul');
         const menuBtn = document.querySelector('.menu-open');
         const closeBtn = document.querySelector('.menu-close');
+        // Add event listeners for menu toggle
         menuBtn.addEventListener('click', () => {
             menu.classList.add('open')
         })
@@ -63,9 +65,11 @@
         })
     </script>   
 
+    <!-- Cat introduction section -->
     <section class="block" id="block-2">
         <h2>LETS INTRODUCE NYUAD CATS</h2>
-        <h5> Press on the image to meet the cats!</h5>
+        <h5> Press on the image to meet the cats! (Or click on the menu)</h5>
+        <!-- Interactive image with image map -->
         <div class="image-container">
             <img src="images/1.png" usemap="#sitemap">
             <map name="sitemap">
@@ -74,11 +78,13 @@
         </div>
     </section>
 
+    <!-- Video section -->
     <section class="block" id="block-3">
         <h3>FILM "WHAT CATS THINK ABOUT"</h3>
         <h4>Produced by Nigina Rashidova and Nomundari Khenzee</h4>
-
+        <!-- Video container -->
         <div class="vcontent">
+            <!-- YouTube video embed -->
             <iframe width="1300" height="720" 
                 src="https://www.youtube.com/embed/klgoBHjgGCI" 
                 frameborder="0" 
@@ -87,14 +93,14 @@
             </iframe>
 
             <p>
-                At NYU Abu Dhabi, cats aren’t just campus animals — they are personalities, icons, and sometimes even rivals. Our documentary takes you into their world, capturing their daily lives as they navigate their routines.
-                From Luna, who melts into students’ arms, to Minnie, the self-proclaimed diva who thrives in the spotlight, each cat has a unique story to tell. Whether it’s Larry and Minnie’s ongoing battle for campus dominance or the quiet wisdom of the older cat Benjamin, this film reveals the hidden community of cats.
-                We ask a simple yet intriguing question: Have you ever wondered what cats think about?
+                At NYU Abu Dhabi, cats aren’t just campus animals — they are personalities and icons. Our documentary takes you into their world, into their daily lives.
+                From Luna, who melts into students’ arms, to Minnie, the diva who thrives in the spotlight, each cat has a unique story to tell. Whether it’s Larry and Minnie’s battle for campus dominance or the wisdom of the older cat Benjamin, this film reveals the hidden community of cats.
+                We ask a simple and intriguing question: Have you ever wondered what cats think about?
 
             </p>
         </div>
     </section>
-
+</body>
 
     <footer>
         <p>&copy; 2025. All Rights Reserved.</p>

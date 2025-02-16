@@ -10,15 +10,16 @@ body{
     font-family: "Josefin Sans", serif;
 }
 
+/* Creates margin around main content wrapper */
 .wrap {
     margin: 2em;
-
 }
+/* Sets header as flex container with space between elements */
 header{
     display: flex;
     justify-content: space-between;
 }
-
+/* Navigation menu styling */
 nav ul{
     background: rgb(255, 255, 255);
     position: fixed;
@@ -32,8 +33,10 @@ nav ul{
     text-align: left;
     padding: 2em;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; 
+    /* Transition creates smooth sliding animation */
 
+    /* Navigation list item styling */
     li {
         margin: 2em 0;  
         &:nth-of-type(1){
@@ -57,6 +60,7 @@ nav ul{
     transform: translateX(0%);
 }
 
+/* Main heading styles*/
 h1 {
     font-size: 7rem; 
     color: rgb(255, 255, 255); 
@@ -66,6 +70,7 @@ h1 {
     padding: 20px;
 }
 
+/* Main content area styling*/
 main {
     background-color: rgb(255, 255, 255);
     background-image: url("2.png"); 
@@ -91,7 +96,7 @@ h2 {
     text-align: center; 
     margin: 0; 
 }
-
+/* Image container styling*/
 .image-container {
     position: relative;
     width: 90%; 
@@ -118,7 +123,7 @@ h3 {
     margin-bottom: 10px; 
 }
 h4 {
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     color: rgb(0, 0, 0); 
     top: 50%; 
     z-index: 1;
@@ -126,26 +131,28 @@ h4 {
     margin: 0;
     margin-bottom: 30px;  
 }
+
+/* Video content container*/
 .vcontent {
-    display: flex;  /* Enables horizontal layout */
+    display: flex;  
     align-items: center;  /* Aligns items vertically */
-    justify-content: center;  /* Centers content */
-    gap: 20px;  /* Adds spacing between video and text */
+    justify-content: center;  
+    gap: 20px; 
 }
 
 .vcontent iframe {
     width: 65%;  /* Makes video take half of the width */
-    height: 400px;  /* Adjust height as needed */
+    height: 400px; 
 }
 
 .vcontent p {
-    width: 35%;  /* Makes text take half of the width */
+    width: 35%; 
     font-size: 1.2rem;
     line-height: 1.5;
 }
 
 h5 {
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     color: rgb(0, 0, 0); 
     top: 50%; 
     z-index: 1;
@@ -154,6 +161,7 @@ h5 {
     margin-bottom: 30px;  
 }
 
+/* Paragraph text styling*/
 p {
     margin: 0;
     font-size: 1.2rem;
@@ -162,7 +170,9 @@ p {
     max-width: 600px;
     font-family: 'Montserrat';
     text-align: left;
+    padding-right: 30px;
     flex-wrap: wrap;
+    /*Flexible wrapping for responsive layout */
 }
 
  

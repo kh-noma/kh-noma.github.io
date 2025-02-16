@@ -1,12 +1,11 @@
-/* General styles */
-
+/* Enable smooth scrolling behavior for the entire page */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0px; /*Removes default margins & padding */
     display: flex;
     height: 100vh;
     background-color: #ffffff;
@@ -17,10 +16,11 @@ body {
     font-size: 8rem; 
     margin-bottom: 20px;
     color: #333;
-    text-align: right;
+    text-align: right; /* Right-aligned to prevent touching edge */
     margin-right: 200px; 
   }
   
+  /* Creates a flexible content container*/
   .content {
     display: flex;
     align-items: center; 
@@ -29,12 +29,14 @@ body {
     flex-wrap: wrap;
 }
 
+/* Image sizing and spacing */
 img {
     width: 500px; 
     height: auto; 
     margin-right: 40px; 
   }
 
+  /* Text block formatting */
   p {
     margin: 0;
     font-size: 1.2rem;
@@ -44,6 +46,8 @@ img {
     font-family: 'Montserrat';
     text-align: left;
   }
+
+/* Back button positioning */
 .back {
   position: absolute;
   top: 20px;
@@ -55,6 +59,7 @@ img {
   height: auto;
 }
 
+/* Dark themed section styling (Minnie) */
 .black-section {
   background-color: #2F2F2F;
   color: rgb(255, 255, 255);
@@ -64,15 +69,17 @@ img {
   margin-top: 50px; 
 }
 
-
+/* Container for image and text layout (Benjamin) */
+/* Creates side-by-side layout with space between items */
 .img7-container {
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
   padding: 20px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /*Allows wrapping on smaller screens */
 }
 
+/* Styling for text container in dark section */
 .text-container {
   font-size: 0.5rem;
   background-color: black; 
@@ -86,11 +93,20 @@ img {
   height: 100%; 
 }
 
+/* Mew section specific styling */
+.mew {
+  padding-left: 50px;
+  max-width: 50%; /* Ensures text section does not take up full width */
+}
+/* Mew image container styling */
 .mew-img{
-  width: 50%; 
+  max-width: 40%; /* Maintains aspect ratio */
+  display: flex;
   height: auto; 
   object-fit: cover; 
 }
+
+/* Subheading styles */
 h3 {
   margin:0;
   padding:0;
@@ -102,5 +118,5 @@ h3 {
 }
 .mew h3{
   text-align: left;
-  padding-right: 50px;
+  padding-left: 50px;
 }
