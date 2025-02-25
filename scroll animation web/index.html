@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comic Demo</title>
+	<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- Navigation bar -->
+	<div id="nav">
+		<!-- link to divs on the same page using their id names -->
+		<a href="#sky"><div class="nav-btn" id="first-page"></div></a>
+		<a href="#first-text"><div class="nav-btn" id="second-page"></div></a>
+		<a href="#forest"><div class="nav-btn" id="third-page"></div></a>
+		<a href="#second-text"><div class="nav-btn" id="fourth-page"></div></a>
+	</div>
+	<div id="sky">
+		<!-- Content to display inside the mountain div -->
+		<div id="bird-div">
+			<span id="bird-text">Going up and up.</span>
+			<img id="bird" src="img/bird.png">
+		</div>
+	</div>
+	<div id="first-text" class="text-section">
+		<p class="text">
+			In a world where the sky met the sea, Zephyrus, the Vast Sky, and Thalassa, the Deep Ocean, argued over who was greater. Zephyrus carried the sun and stars, while Thalassa cradled all life. Their rivalry stirred storms, threatening a tiny island.
+		</p>
+	</div>
+	<div id="forest">
+		<!-- Content to display inside the ocean div -->
+		<div id="bird1-div">
+			<div id="bird1-container">
+				<img id="bird1" src="img/bird1.png">
+			</div>
+			<span id="bird1-text">Bird is flying.</span>
+		</div>
+	</div>
+	
+	<div id="second-text" class="text-section">
+		<p class="text">An old capybara, watching calmly, spoke: "You both give life, but together, you bring harmony."
+			Hearing this, Zephyrus softened his winds, and Thalassa stilled her waves. From then on, they danced in balance, and the world found peace.
+			The capybara simply nodded and rested, watching the sky kiss the sea. 
+		</p>
+	</div>
+	<!-- Cat div position is fixed on the bottom left corner of the web page -->
+	<div id="cap-div">
+		<span id="cap-text">Hello!</span>
+		<img id="cap" src="img/capybara.png">
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
