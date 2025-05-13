@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-text">Loading Creative Experience</div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+  <div class="cursor-follower"></div>
+  <canvas id="background-canvas"></canvas>
+
+  <header>
+    <div class="logo">Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm <span class="highlight">Nomundari | Noma</span></h1>
+        <p>Film Creator | Digital Artist | Designer</p>
+        <div class="scroll-indicator">
+          <span>Scroll to explore</span>
+          <div class="scroll-arrow">↓</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+            <img class="image-placeholder" src="kh.nomundarinft.png" alt="Your Photo">
+        </div>
+        <div class="about-text">
+          <p>I'm a university student passionate about creative expression through film, digital art, and design. Currently studying Computer Science & Interactive Media at New York University Abu Dhabi, I combine technical skills with my vision to immerse into creative experiences.</p>
+          <p>When I'm not working on projects, you can find me running on track and training for a marathon.</p>
+          <div class="skills">
+            <div class="skill">Filmmaking</div>
+            <div class="skill">Digital Art</div>
+            <div class="skill">UI/UX Design</div>
+            <div class="skill">Photography</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="film">Film</button>
+          <button class="filter-btn" data-filter="art">Digital Art</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+      </div>
+      <div class="projects-grid">
+        <a href="https://drive.google.com/file/d/1WBAn7A1_RnrJwk13Tc5ieW2f5wM2jjSW/view?usp=sharing" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="project-card" data-category="film">
+            <div class="project-thumbnail">
+              <img class="image-placeholder" src="Foryoudad.png" alt="Film Project">
+            </div>
+            <h3>For You, Dad</h3>
+            <p>A brief description about this film project and your role in it.</p>
+          </div>
+        </a>
+      </div>
+      
+      <div class="project-card" data-category="art">
+        <div class="project-thumbnail">
+          <div class="image-placeholder">Art Project</div>
+        </div>
+        <h3>Digital Art Portfolio</h3>
+        <p>Description of your digital art series, technique and inspiration.</p>
+        <a href="Nomundari_Khenzee_portfolio.pdf" target="_blank">View PDF</a>
+      </div>      
+        
+        <a href="https://drive.google.com/file/d/1adQZK1f-wA57NCB2-5ZvowLBiVxAOr8j/view?usp=sharing" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="project-card" data-category="film">
+            <div class="project-thumbnail">
+              <img class="image-placeholder" src="Letitfree.png" alt="Film Project">
+            </div>
+            <h3>Let It Free</h3>
+            <p>Short Documentary about the meaning of contemporary dance as an identity</p>
+          </div>
+        </a>        
+       
+        <div class="project-card" data-category="art">
+          <div class="project-thumbnail">
+            <div class="image-placeholder">Art Project</div>
+          </div>
+          <h3>Illustration Collection</h3>
+          <p>Description of your illustration work and its themes.</p>
+        </div>
+  
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+      </div>
+      <div class="contact-content">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">nk3945@nyu.edu</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Abu Dhabi, UAE</span>
+          </div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/noma__kh/" class="social-link" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/nomundari-khenzee-8a991a2a8/" class="social-link" target="_blank">LinkedIn</a>
+            <a href="https://www.behance.net/nomundakhenzee" class="social-link" target="_blank">Behance</a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nomundari. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
